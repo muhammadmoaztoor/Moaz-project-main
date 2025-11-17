@@ -1,0 +1,29 @@
+.animated-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(0, 0, 0);
+}
+
+.stars {
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.twinkling {
+  width: 100%;
+  height: 100%;
+  background: transparent url("https://www.transparenttextures.com/patterns/tiny-grid.png") repeat;
+  animation: move-twinkle 20s linear infinite;
+}
+
+@keyframes move-twinkle {
+  from { background-position: 0 0; }
+  to { background-position: -10000px 5000px; }
+}
